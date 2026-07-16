@@ -47,13 +47,13 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    color:#555;
     text-decoration:none;
     transition:.3s;
 }
 
 nav a:hover{
-    color:gold;
+    color:#E75480;
 }
 
 /* Hero */
