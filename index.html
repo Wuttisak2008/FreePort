@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | นายวุฒิศักดิ์ สวัสดี</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== Header ===== -->
+
+<header>
+
+    <nav>
+
+        <h2 class="logo">Portfolio</h2>
+
+        <ul>
+
+            <li><a href="#home">หน้าหลัก</a></li>
+
+            <li><a href="#about">ประวัติ</a></li>
+
+            <li><a href="#gallery">ผลงาน</a></li>
+
+            <li><a href="#contact">ติดต่อ</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ===== Hero ===== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <h1>นายวุฒิศักดิ์ สวัสดี</h1>
+
+        <h3>Portfolio เพื่อศึกษาต่อ</h3>
+
+        <p>
+            เว็บไซต์รวบรวมผลงาน กิจกรรม และความภาคภูมิใจ
+            เพื่อใช้ประกอบการสมัครเข้าศึกษาต่อระดับมหาวิทยาลัย
+        </p>
+
+        <a href="#gallery" class="btn">
+            ชมผลงาน
+        </a>
+
+    </div>
+
+    <div class="hero-img">
+
+        <img src="images/profile.jpg" alt="Profile">
+
+    </div>
+
+</section>
+
+<!-- ===== About ===== -->
+
+<section id="about">
+
+<h2 class="title">
+เกี่ยวกับฉัน
+</h2>
+
+<div class="about-box">
+
+<p>
+
+ชื่อ : นายวุฒิศักดิ์ สวัสดี
+
+<br><br>
+
+กำลังศึกษาระดับชั้นมัธยมศึกษาตอนปลาย
+
+<br><br>
+
+มีความสนใจด้านเทคโนโลยี
+การพัฒนาเว็บไซต์
+AI
+IoT
+และนวัตกรรม
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== Gallery ===== -->
+
+<section id="gallery">
+
+<h2 class="title">
+
+ผลงาน Portfolio
+
+</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="images/page1.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 1</p>
+</div>
+
+<div class="card">
+<img src="images/page2.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 2</p>
+</div>
+
+<div class="card">
+<img src="images/page3.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 3</p>
+</div>
+
+<div class="card">
+<img src="images/page4.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 4</p>
+</div>
+
+<div class="card">
+<img src="images/page5.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 5</p>
+</div>
+
+<div class="card">
+<img src="images/page6.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 6</p>
+</div>
+
+<div class="card">
+<img src="images/page7.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 7</p>
+</div>
+
+<div class="card">
+<img src="images/page8.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 8</p>
+</div>
+
+<div class="card">
+<img src="images/page9.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 9</p>
+</div>
+
+<div class="card">
+<img src="images/page10.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 10</p>
+</div>
+
+<div class="card">
+<img src="images/page11.jpg" onclick="openImage(this.src)">
+<p>Portfolio หน้า 11</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== Popup ===== -->
+
+<div id="popup">
+
+<span onclick="closeImage()">&times;</span>
+
+<img id="popup-img">
+
+</div>
+
+<!-- ===== Contact ===== -->
+
+<section id="contact">
+
+<h2 class="title">
+
+Contact
+
+</h2>
+
+<div class="contact-box">
+
+<p>👤 นายวุฒิศักดิ์ สวัสดี</p>
+
+<p>🎓 Portfolio เพื่อศึกษาต่อ</p>
+
+<p>📧 Email : your@email.com</p>
+
+<p>💻 GitHub : github.com/yourname</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 นายวุฒิศักดิ์ สวัสดี
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
