@@ -11,9 +11,11 @@
 }
 
 body{
-    background:linear-gradient(135deg,#081b4b,#0b2f7a,#123f9c);
-    color:white;
+    background:linear-gradient(135deg,#FFF7FA,#FFEAF3,#FFDDEB);
+    color:#444;
+    font-family:'Kanit',sans-serif;
 }
+
 
 /* Navbar */
 
