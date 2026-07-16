@@ -14,7 +14,6 @@ body{
     background:linear-gradient(135deg,#FFF8FB,#FFEAF4,#FFD9E8);
     color:#4A4A4A;
 }
-
 /* Navbar */
 
 header{
@@ -22,34 +21,41 @@ header{
     width:100%;
     top:0;
     z-index:1000;
-   header{
     background:rgba(255,255,255,.85);
     backdrop-filter:blur(12px);
     border-bottom:2px solid #FFB6C1;
 }
 
-  
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    header{
-    background:rgba(255,255,255,.85);
-    backdrop-filter:blur(12px);
-    border-bottom:2px solid #FFB6C1;  
-    }
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
 
 .logo{
     color:#E75480;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
 nav a{
-    color:#555;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:#E75480;
+    color:gold;
 }
+
 /* Hero */
 
 .hero{
@@ -82,17 +88,19 @@ nav a:hover{
 
 .btn{
     display:inline-block;
-    background:#FFB6C1;
-    color:white;
+    margin-top:25px;
     padding:14px 35px;
-    border-radius:30px;
+    background:gold;
+    color:#082567;
     text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
     transition:.3s;
 }
 
 .btn:hover{
-    background:#E75480;
-    box-shadow:0 0 20px #FFC0CB;
+    transform:translateY(-3px);
+    box-shadow:0 0 20px gold;
 }
 
 .hero-img img{
