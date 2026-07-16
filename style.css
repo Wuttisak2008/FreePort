@@ -1,0 +1,235 @@
+/* =======================
+   Portfolio Theme Blue & Gold
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#081b4b,#0b2f7a,#123f9c);
+    color:white;
+}
+
+/* Navbar */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(8,27,75,.9);
+    backdrop-filter:blur(10px);
+    border-bottom:2px solid gold;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
+
+.logo{
+    color:gold;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:120px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:550px;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:gold;
+}
+
+.hero-text h3{
+    margin:15px 0;
+    font-weight:400;
+}
+
+.hero-text p{
+    line-height:1.8;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 35px;
+    background:gold;
+    color:#082567;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px gold;
+}
+
+.hero-img img{
+    width:320px;
+    border-radius:50%;
+    border:6px solid gold;
+    box-shadow:0 0 30px gold;
+}
+
+/* Section */
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    color:gold;
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.about-box,
+.contact-box{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(255,215,0,.4);
+    backdrop-filter:blur(8px);
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+    border:2px solid rgba(255,215,0,.35);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px gold;
+}
+
+.card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.card p{
+    padding:15px;
+    text-align:center;
+}
+
+/* Popup */
+
+#popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#popup img{
+    max-width:90%;
+    max-height:90%;
+    border:5px solid gold;
+    border-radius:10px;
+}
+
+#popup span{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:white;
+    font-size:50px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#07122f;
+    text-align:center;
+    padding:25px;
+    border-top:2px solid gold;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+.hero-img img{
+    width:230px;
+    margin-top:40px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
