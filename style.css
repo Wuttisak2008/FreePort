@@ -142,16 +142,16 @@ section{
 }
 
 .card{
-    background:rgba(255,255,255,.08);
-    border-radius:18px;
+    background:white;
+    border-radius:20px;
     overflow:hidden;
+    border:2px solid #FFD1DC;
     transition:.3s;
-    border:2px solid rgba(255,215,0,.35);
 }
 
 .card:hover{
     transform:translateY(-8px);
-    box-shadow:0 0 20px gold;
+    box-shadow:0 12px 30px rgba(255,182,193,.45);
 }
 
 .card img{
