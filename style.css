@@ -90,17 +90,15 @@ nav a:hover{
     display:inline-block;
     margin-top:25px;
     padding:14px 35px;
-    background:#FFB6C1;
-    color:white;
+    background:#FFB6C1 !important;
+    color:white !important;
     text-decoration:none;
     border-radius:30px;
     font-weight:bold;
-    transition:.3s;
 }
 
 .btn:hover{
-    background:#E75480;
-    box-shadow:0 0 20px #FFC0CB;
+    background:#E75480 !important;
 }
 .hero-img img{
     width:320px;
