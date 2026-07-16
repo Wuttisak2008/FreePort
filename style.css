@@ -81,19 +81,17 @@ nav a:hover{
 
 .btn{
     display:inline-block;
-    margin-top:25px;
+    background:#FFB6C1;
+    color:white;
     padding:14px 35px;
-    background:gold;
-    color:#082567;
-    text-decoration:none;
     border-radius:30px;
-    font-weight:bold;
+    text-decoration:none;
     transition:.3s;
 }
 
 .btn:hover{
-    transform:translateY(-3px);
-    box-shadow:0 0 20px gold;
+    background:#E75480;
+    box-shadow:0 0 20px #FFC0CB;
 }
 
 .hero-img img{
