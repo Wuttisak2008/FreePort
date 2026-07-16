@@ -28,37 +28,27 @@ header{
     backdrop-filter:blur(10px);
     border-bottom:2px solid gold;
 }
-
-nav{
-    width:90%;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px;
+  
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(10px);
+    border-bottom:2px solid #FFB6C1;
 }
 
 .logo{
-    color:gold;
-    font-size:28px;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:25px;
+    color:#E75480;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
+    color:#555;
 }
 
 nav a:hover{
-    color:gold;
+    color:#E75480;
 }
-
 /* Hero */
 
 .hero{
