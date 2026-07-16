@@ -34,8 +34,8 @@ header{
     header{
     background:rgba(255,255,255,.85);
     backdrop-filter:blur(12px);
-    border-bottom:2px solid #FFB6C1;
-}
+    border-bottom:2px solid #FFB6C1;  
+    }
 
 .logo{
     color:#E75480;
