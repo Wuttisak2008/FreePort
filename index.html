@@ -1,91 +1,108 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | ใส่ชื่อตัวเอง</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ===== Header ===== -->
-
 <header>
 
-    <nav>
+<nav>
 
-        <h2 class="logo">Portfolio</h2>
+<div class="logo">MY PORTFOLIO</div>
 
-        <ul>
+<ul>
 
-            <li><a href="#home">หน้าหลัก</a></li>
+<li><a href="#home">หน้าหลัก</a></li>
+<li><a href="#about">เกี่ยวกับ</a></li>
+<li><a href="#education">การศึกษา</a></li>
+<li><a href="#portfolio">ผลงาน</a></li>
+<li><a href="#contact">ติดต่อ</a></li>
 
-            <li><a href="#about">ประวัติ</a></li>
+</ul>
 
-            <li><a href="#gallery">ผลงาน</a></li>
-
-            <li><a href="#contact">ติดต่อ</a></li>
-
-        </ul>
-
-    </nav>
+</nav>
 
 </header>
 
-<!-- ===== Hero ===== -->
+<!-- Hero -->
 
 <section class="hero" id="home">
 
-    <div class="hero-text">
+<div class="hero-text">
 
-        <h1>ใสชื่ออออออออโว้ยยยยย</h1>
+<h1>______________________</h1>
 
-        <h3>Portfolio เพื่อศึกษาต่อคณะอะไรวะเห้ย........</h3>
-
-        <p>
-            เว็บไซต์รวบรวมผลงาน กิจกรรม และความภาคภูมิใจ
-            เพื่อใช้ประกอบการสมัครเข้าศึกษาต่อระดับมหาวิทยาลัย
-        </p>
-
-        <a href="#gallery" class="btn">
-            ชมผลงาน
-        </a>
-
-    </div>
-
-    <div class="hero-img">
-
-        <img src="images/profile.jpg" alt="Profile">
-
-    </div>
-
-</section>
-
-<!-- ===== About ===== -->
-
-<section id="about">
-
-<h2 class="title">
-เกี่ยวกับฉัน
-</h2>
-
-<div class="about-box">
+<h3>Portfolio เพื่อศึกษาต่อ</h3>
 
 <p>
 
-ชื่อ : ใส่ชื่อตัวเองโว้ยยยยยย
+เขียนข้อความแนะนำตัวเองตรงนี้
 
-<br><br>
+</p>
 
-กำลังศึกษาระดับชั้นอะไรก็ว่าไปปปปปป
+<a href="#portfolio" class="btn">
 
-<br><br>
+ดูผลงาน
 
-มีความสนใจด้านอะไรก็ว่าปายยยยยยยยยย
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/profile.jpg">
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2 class="title">เกี่ยวกับฉัน</h2>
+
+<div class="box">
+
+<p>
+
+ชื่อ : _______________________
+
+</p>
+
+<p>
+
+โรงเรียน : _______________________
+
+</p>
+
+<p>
+
+แผนการเรียน : _______________________
+
+</p>
+
+<p>
+
+ความสามารถ :
+
+_______________________
+
+</p>
+
+<p>
+
+เป้าหมาย :
+
+_______________________
 
 </p>
 
@@ -93,70 +110,106 @@
 
 </section>
 
-<!-- ===== Gallery ===== -->
+<!-- Education -->
 
-<section id="gallery">
+<section id="education">
+
+<h2 class="title">ประวัติการศึกษา</h2>
+
+<div class="box">
+
+<p>
+
+ระดับประถม :
+
+________________________
+
+</p>
+
+<p>
+
+ระดับมัธยมต้น :
+
+________________________
+
+</p>
+
+<p>
+
+ระดับมัธยมปลาย :
+
+________________________
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Portfolio -->
+
+<section id="portfolio">
 
 <h2 class="title">
 
-ผลงาน Portfolio
+Portfolio Gallery
 
 </h2>
 
 <div class="gallery">
 
 <div class="card">
-<img src="images/page1.jpg" onclick="openImage(this.src)">
+<img src="images/page1.jpg">
 <p>Portfolio หน้า 1</p>
 </div>
 
 <div class="card">
-<img src="images/page2.jpg" onclick="openImage(this.src)">
+<img src="images/page2.jpg">
 <p>Portfolio หน้า 2</p>
 </div>
 
 <div class="card">
-<img src="images/page3.jpg" onclick="openImage(this.src)">
+<img src="images/page3.jpg">
 <p>Portfolio หน้า 3</p>
 </div>
 
 <div class="card">
-<img src="images/page4.jpg" onclick="openImage(this.src)">
+<img src="images/page4.jpg">
 <p>Portfolio หน้า 4</p>
 </div>
 
 <div class="card">
-<img src="images/page5.jpg" onclick="openImage(this.src)">
+<img src="images/page5.jpg">
 <p>Portfolio หน้า 5</p>
 </div>
 
 <div class="card">
-<img src="images/page6.jpg" onclick="openImage(this.src)">
+<img src="images/page6.jpg">
 <p>Portfolio หน้า 6</p>
 </div>
 
 <div class="card">
-<img src="images/page7.jpg" onclick="openImage(this.src)">
+<img src="images/page7.jpg">
 <p>Portfolio หน้า 7</p>
 </div>
 
 <div class="card">
-<img src="images/page8.jpg" onclick="openImage(this.src)">
+<img src="images/page8.jpg">
 <p>Portfolio หน้า 8</p>
 </div>
 
 <div class="card">
-<img src="images/page9.jpg" onclick="openImage(this.src)">
+<img src="images/page9.jpg">
 <p>Portfolio หน้า 9</p>
 </div>
 
 <div class="card">
-<img src="images/page10.jpg" onclick="openImage(this.src)">
+<img src="images/page10.jpg">
 <p>Portfolio หน้า 10</p>
 </div>
 
 <div class="card">
-<img src="images/page11.jpg" onclick="openImage(this.src)">
+<img src="images/page11.jpg">
 <p>Portfolio หน้า 11</p>
 </div>
 
@@ -164,17 +217,7 @@
 
 </section>
 
-<!-- ===== Popup ===== -->
-
-<div id="popup">
-
-<span onclick="closeImage()">&times;</span>
-
-<img id="popup-img">
-
-</div>
-
-<!-- ===== Contact ===== -->
+<!-- Contact -->
 
 <section id="contact">
 
@@ -184,15 +227,15 @@ Contact
 
 </h2>
 
-<div class="contact-box">
+<div class="box">
 
-<p>👤ใส่ชื่อตัวเองนะจ๊ะ </p>
+<p>Email : __________________</p>
 
-<p>🎓 Portfolio เพื่อศึกษาต่อ....</p>
+<p>Facebook : __________________</p>
 
-<p>📧 Email : ใส่อีเมล ถ้าไม่ใส่ก็ลบบรรทัดนนี้ทิ้ง </p>
+<p>GitHub : __________________</p>
 
-<p>💻 GitHub : github.com/ชื่อตัวเองภาษอังกฤษ </p>
+<p>Phone : __________________</p>
 
 </div>
 
@@ -200,11 +243,7 @@ Contact
 
 <footer>
 
-<p>
-
-© 2026 ชื่อตัวเองครับยบบบบ
-
-</p>
+© 2026 My Portfolio
 
 </footer>
 
