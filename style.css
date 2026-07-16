@@ -104,9 +104,11 @@ nav a:hover{
 }
 .hero-img img{
     width:320px;
-    border-radius:50%;
-    border:6px solid gold;
-    box-shadow:0 0 30px gold;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    border:6px solid #FFB6C1;
+    box-shadow:0 0 30px rgba(255,182,193,.6);
 }
 
 /* Section */
@@ -197,10 +199,10 @@ section{
 /* Footer */
 
 footer{
-    background:#07122f;
+    background:#FFE4EC;
+    color:#666;
     text-align:center;
     padding:25px;
-    border-top:2px solid gold;
 }
 
 /* Responsive */
