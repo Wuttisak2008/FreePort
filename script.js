@@ -1,46 +1,83 @@
-// เปิดรูป
-function openImage(src) {
-    const popup = document.getElementById("popup");
-    const popupImg = document.getElementById("popup-img");
+/*==================================
+        PRELOADER
+==================================*/
 
-    popup.style.display = "flex";
-    popupImg.src = src;
+window.addEventListener("load", () => {
+
+const loader = document.getElementById("loader");
+
+loader.style.opacity = "0";
+
+setTimeout(() => {
+
+loader.style.display = "none";
+
+},600);
+
+});
+
+/*==================================
+        MOBILE MENU
+==================================*/
+
+const menuBtn = document.querySelector(".menu-btn");
+
+const navMenu = document.querySelector(".nav-menu");
+
+menuBtn.addEventListener("click",()=>{
+
+navMenu.classList.toggle("show");
+
+});
+
+/*==================================
+        HEADER SCROLL
+==================================*/
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 80){
+
+header.classList.add("active");
+
+}else{
+
+header.classList.remove("active");
+
 }
 
-// ปิดรูป
-function closeImage() {
-    document.getElementById("popup").style.display = "none";
+});
+
+/*==================================
+      IMAGE POPUP
+==================================*/
+
+function openPopup(src){
+
+const popup = document.getElementById("popup");
+
+const img = document.getElementById("popup-img");
+
+popup.style.display="flex";
+
+img.src=src;
+
 }
 
-// กด ESC เพื่อปิด
-document.addEventListener("keydown", function(e){
-    if(e.key === "Escape"){
-        closeImage();
-    }
-});
+function closePopup(){
 
-// คลิกพื้นหลังเพื่อปิด
-document.getElementById("popup").addEventListener("click", function(e){
-    if(e.target.id === "popup"){
-        closeImage();
-    }
-});
+document.getElementById("popup").style.display="none";
 
-// เอฟเฟกต์เลื่อนเข้ามา
-const cards = document.querySelectorAll(".card");
+}
 
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.style.opacity="1";
-            entry.target.style.transform="translateY(0)";
-        }
-    });
-});
+document.getElementById("popup").addEventListener("click",function(e){
 
-cards.forEach(card=>{
-    card.style.opacity="0";
-    card.style.transform="translateY(40px)";
-    card.style.transition=".6s";
-    observer.observe(card);
+if(e.target.id=="popup"){
+
+closePopup();
+
+}
+
 });
