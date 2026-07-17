@@ -1,83 +1,244 @@
-/*==================================
-        PRELOADER
-==================================*/
+/*==============================
+        PORTFOLIO JAVASCRIPT
+        PREMIUM 2026
+==============================*/
 
-window.addEventListener("load", () => {
 
-const loader = document.getElementById("loader");
+// ================= PRELOADER =================
 
-loader.style.opacity = "0";
+window.addEventListener("load",()=>{
 
-setTimeout(() => {
+    const loader = document.getElementById("loader");
 
-loader.style.display = "none";
+    if(loader){
 
-},600);
+        loader.style.opacity="0";
 
-});
+        setTimeout(()=>{
 
-/*==================================
-        MOBILE MENU
-==================================*/
+            loader.style.display="none";
 
-const menuBtn = document.querySelector(".menu-btn");
+        },500);
 
-const navMenu = document.querySelector(".nav-menu");
-
-menuBtn.addEventListener("click",()=>{
-
-navMenu.classList.toggle("show");
+    }
 
 });
 
-/*==================================
-        HEADER SCROLL
-==================================*/
 
-const header = document.getElementById("header");
+
+// ================= MOBILE MENU =================
+
+
+const menu = document.querySelector(".menu");
+const nav = document.querySelector("nav");
+
+
+if(menu){
+
+menu.addEventListener("click",()=>{
+
+
+    nav.classList.toggle("active");
+
+
+});
+
+
+}
+
+
+
+// ================= SCROLL HEADER =================
+
+
+const header = document.querySelector("header");
+
 
 window.addEventListener("scroll",()=>{
 
-if(window.scrollY > 80){
 
-header.classList.add("active");
+    if(window.scrollY > 50){
 
-}else{
+        header.style.background =
+        "rgba(10,10,40,.85)";
 
-header.classList.remove("active");
+    }
+
+    else{
+
+        header.style.background =
+        "rgba(255,255,255,.08)";
+
+    }
+
+
+});
+
+
+
+// ================= SCROLL ANIMATION =================
+
+
+const cards =
+document.querySelectorAll(
+".about-card, .achievement-card, .timeline-card"
+);
+
+
+
+const observer =
+new IntersectionObserver((entries)=>{
+
+
+entries.forEach(entry=>{
+
+
+if(entry.isIntersecting){
+
+
+entry.target.classList.add("show");
+
 
 }
+
 
 });
 
-/*==================================
-      IMAGE POPUP
-==================================*/
 
-function openPopup(src){
+},
+{
 
-const popup = document.getElementById("popup");
-
-const img = document.getElementById("popup-img");
-
-popup.style.display="flex";
-
-img.src=src;
-
-}
-
-function closePopup(){
-
-document.getElementById("popup").style.display="none";
-
-}
-
-document.getElementById("popup").addEventListener("click",function(e){
-
-if(e.target.id=="popup"){
-
-closePopup();
-
-}
+threshold:.2
 
 });
+
+
+
+cards.forEach(card=>{
+
+
+observer.observe(card);
+
+
+});
+
+
+
+
+// ================= PROFILE FLOAT =================
+
+
+const profile =
+document.querySelector(".image-box");
+
+
+
+let angle=0;
+
+
+setInterval(()=>{
+
+
+angle+=0.03;
+
+
+if(profile){
+
+
+profile.style.transform =
+`translateY(${Math.sin(angle)*10}px)`;
+
+
+}
+
+
+},30);
+
+
+
+
+
+// ================= SMOOTH LINK =================
+
+
+document.querySelectorAll("a[href^='#']")
+.forEach(link=>{
+
+
+link.addEventListener("click",function(e){
+
+
+const target =
+document.querySelector(
+this.getAttribute("href")
+);
+
+
+if(target){
+
+
+e.preventDefault();
+
+
+target.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+
+}
+
+
+});
+
+
+});
+
+
+
+
+// ================= TYPING EFFECT =================
+
+
+const text =
+document.querySelector(".hero h3");
+
+
+if(text){
+
+
+const message =
+"Student Portfolio | IT & Medical Informatics";
+
+
+let index=0;
+
+
+text.innerHTML="";
+
+
+function typing(){
+
+
+if(index < message.length){
+
+
+text.innerHTML += message[index];
+
+index++;
+
+
+setTimeout(typing,70);
+
+
+}
+
+
+}
+
+
+typing();
+
+
+}
